@@ -5,8 +5,8 @@
 ### local build and install guide
 
 ```sh
-git clone https://github.com/gmanka-flatpaks/io.github.gmankab.handyfox
-cd io.github.gmankab.handyfox
+git clone https://github.com/pocketblue/handyfox
+cd handyfox
 flatpak --user remote-add flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 flatpak install org.flatpak.Builder
 flatpak run org.flatpak.Builder --user --install --install-deps-from=flathub --force-clean --repo=repo build io.github.gmankab.handyfox.yml
@@ -30,5 +30,5 @@ support for firefox-gnome-theme is currently work in progress, and gnome-theme.y
 - [mobile-config-firefox](https://gitlab.postmarketos.org/postmarketOS/mobile-config-firefox) license is mpl-2.0
 - [firefox-gnome-theme](https://github.com/rafaelmardojai/firefox-gnome-theme) license is unlicense
 - [handyfox](https://github.com/gmanka-flatpaks/io.github.gmankab.handyfox) manifest license is agpl 3
-- [handyfox](https://github.com/gmanka-flatpaks/io.github.gmankab.handyfox) metadata license is cc0
+- [handyfox](https://github.com/gmanka-flatpaks/io.github.gmankab.handyfox) metainfo license is cc0
 
