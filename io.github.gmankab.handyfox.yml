@@ -70,7 +70,7 @@ modules:
       - install -D -m644 ${FLATPAK_ID}.metainfo.xml -t /app/share/metainfo
       - install -D -m644 ${FLATPAK_ID}.desktop -t /app/share/applications
 
-  - modules/themes/mobile-config.yml
+  - modules/mobile-config/mobile-config.yml
 
   # following dependencies are optional
   # you can disable them for faster build
@@ -79,5 +79,4 @@ modules:
   - modules/optional/speech.yml
 
   # gnome theme is very unstable when combined with mobile-config
-  # - modules/themes/gnome-theme.yml
-
+  # - modules/gnome-theme/gnome-theme.yml
