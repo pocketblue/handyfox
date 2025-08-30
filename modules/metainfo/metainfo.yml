@@ -1,11 +1,11 @@
 name: metainfo
 sources:
   - type: file
-    path: io.github.gmankab.handyfox.svg
+    path: io.github.pocketblue.handyfox.svg
   - type: file
-    path: io.github.gmankab.handyfox.metainfo.xml
+    path: io.github.pocketblue.handyfox.metainfo.xml
   - type: file
-    path: io.github.gmankab.handyfox.desktop
+    path: io.github.pocketblue.handyfox.desktop
 buildsystem: simple
 build-commands:
   - install -D -m644 ${FLATPAK_ID}.svg -t /app/share/icons/hicolor/scalable/apps

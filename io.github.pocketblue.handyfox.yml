@@ -1,4 +1,4 @@
-id: io.github.gmankab.handyfox
+id: io.github.pocketblue.handyfox
 runtime: org.freedesktop.Platform
 runtime-version: '24.08'
 sdk: org.freedesktop.Sdk

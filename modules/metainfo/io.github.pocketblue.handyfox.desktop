@@ -2,7 +2,7 @@
 Name=HandyFox
 Exec=launcher.sh %u
 Comment=Browser for mobile devices
-Icon=io.github.gmankab.handyfox
+Icon=io.github.pocketblue.handyfox
 Type=Application
 MimeType=text/html;text/xml;application/xhtml+xml;x-scheme-handler/http;x-scheme-handler/https;application/x-xpinstall;application/pdf;application/json;
 Categories=Network;WebBrowser;
@@ -23,4 +23,3 @@ Exec=launcher.sh --private-window %u
 [Desktop Action profilemanager]
 Name=Open the Profile Manager
 Exec=launcher.sh --ProfileManager %u
-
