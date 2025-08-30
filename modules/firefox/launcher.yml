@@ -1,0 +1,12 @@
+name: launcher
+sources:
+  - type: script
+    dest-filename: launcher.sh
+    commands:
+      - #!/bin/bash
+      - export TMPDIR=$XDG_CACHE_HOME/tmp
+      - exec /app/lib/firefox/firefox --name $FLATPAK_ID "$@"
+buildsystem: simple
+build-commands:
+  - install -d /app/lib/ffmpeg
+  - install -D -m755 launcher.sh /app/bin/launcher.sh

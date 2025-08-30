@@ -30,7 +30,8 @@ finish-args:
   - --env=MOZ_USE_XINPUT2=1
   - --persist=.mozilla
 modules:
-  - modules/firefox/firefox.yml
+  - modules/firefox/launcher.yml
+  - modules/firefox/firefox_build_download.yml
   - modules/metainfo/metainfo.yml
   - modules/mobile-config/mobile-config.yml
 
