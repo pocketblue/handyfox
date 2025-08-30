@@ -2,11 +2,12 @@
 
 <img src="https://raw.githubusercontent.com/pocketblue/handyfox/refs/heads/main/modules/metainfo/screenshot.png" height="400" />
 
-### local build and install guide
+### local build guide
 
 ```sh
 git clone https://github.com/pocketblue/handyfox
 cd handyfox
+sed -i 's|firefox_extra_data.yml|firefox_build_download.yml|' io.github.pocketblue.handyfox.yml
 flatpak --user remote-add flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 flatpak install org.flatpak.Builder
 flatpak run org.flatpak.Builder --user --install --install-deps-from=flathub --force-clean --repo=repo build io.github.pocketblue.handyfox.yml
