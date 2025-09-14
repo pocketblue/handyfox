@@ -5,8 +5,8 @@ sources:
     commands:
       - #!/bin/bash
       - export TMPDIR=$XDG_CACHE_HOME/tmp
-      - if [ -e /app/extra/firefox/firefox ] ; export firefox=/app/extra/firefox/firefox
-      - if [ -e /app/lib/firefox/firefox ] ; export firefox=/app/lib/firefox/firefox
+      - if [ -e /app/extra/firefox/firefox ]; then export firefox=/app/extra/firefox/firefox; fi
+      - if [ -e /app/lib/firefox/firefox   ]; then export firefox=/app/lib/firefox/firefox; fi
       - exec $firefox --name $FLATPAK_ID "$@"
 buildsystem: simple
 build-commands:
