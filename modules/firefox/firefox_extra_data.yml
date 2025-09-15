@@ -13,6 +13,8 @@ sources:
       type: anitya
       project-id: 5506
       url-template: https://download-installer.cdn.mozilla.net/pub/firefox/releases/$version/linux-x86_64/en-US/firefox-$version.tar.xz
+      is-main-source: true
+      is-important: true
   - type: extra-data
     only-arches:
       - aarch64
@@ -24,6 +26,8 @@ sources:
       type: anitya
       project-id: 5506
       url-template: https://download-installer.cdn.mozilla.net/pub/firefox/releases/$version/linux-aarch64/en-US/firefox-$version.tar.xz
+      is-main-source: true
+      is-important: true
 buildsystem: simple
 build-commands:
   - install -Dm755 apply_extra /app/bin/apply_extra
