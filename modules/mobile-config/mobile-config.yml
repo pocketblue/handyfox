@@ -3,10 +3,10 @@ buildsystem: simple
 sources:
   - type: git
     url: https://gitlab.postmarketos.org/postmarketOS/mobile-config-firefox
-    commit: 1c09ac885e7e5ebc5f40270b99f8f3b8d56823af
+    commit: f7f638bdec28cf149fef73b5c17e01f2c977e276
     x-checker-data:
       type: git
-    tag: 4.6.0
+    tag: 4.6.1
   - type: patch
     paths:
       - patches/autoconfig.patch # loading gnome theme, replace /etc with /app/etc
@@ -15,7 +15,8 @@ sources:
 build-commands:
   # get all firefox search engines back
   # disable annoying check for default browser
-  - jq 'del(.policies.SearchEngines)|.policies.DontCheckDefaultBrowser=true' src/policies.json | tee src/policies.tmp
+  - jq 'del(.policies.SearchEngines)|.policies.DontCheckDefaultBrowser=true' src/policies.json
+    | tee src/policies.tmp
   - mv src/policies.tmp src/policies.json
   - make install DESTDIR=/app FIREFOX_DIR=lib/firefox FIREFOX_CONFIG_DIR=lib/firefox/distribution
   - mkdir /app/etc/firefox
