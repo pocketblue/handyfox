@@ -1,2 +1,4 @@
 tar -xf firefox.tar.xz
 rm firefox.tar.xz
+cp -r /app/lib/firefox/distribution firefox
+cp -r /app/lib/firefox/defaults firefox
