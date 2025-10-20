@@ -6,9 +6,9 @@ sources:
     only-arches:
       - x86_64
     filename: firefox.tar.xz
-    url: https://download-installer.cdn.mozilla.net/pub/firefox/releases/142.0.1/linux-x86_64/en-US/firefox-142.0.1.tar.xz
-    sha256: 8f47a714610a624ad536a652a70242aa894a37f65565fd3103d4366869743b91
-    size: 77867240
+    url: https://download-installer.cdn.mozilla.net/pub/firefox/releases/144.0/linux-x86_64/en-US/firefox-144.0.tar.xz
+    sha256: c66a48222ff67d51560240d321895c6926c9b3af345cbf688ced8517781d88d1
+    size: 79287252
     x-checker-data:
       type: anitya
       project-id: 5506
@@ -19,9 +19,9 @@ sources:
     only-arches:
       - aarch64
     filename: firefox.tar.xz
-    url: https://download-installer.cdn.mozilla.net/pub/firefox/releases/142.0.1/linux-aarch64/en-US/firefox-142.0.1.tar.xz
-    sha256: ee3c8aeb57740c4a20b97136876cd40e4b60870ab0068e78ab9de22f2a01399a
-    size: 66248764
+    url: https://download-installer.cdn.mozilla.net/pub/firefox/releases/144.0/linux-aarch64/en-US/firefox-144.0.tar.xz
+    sha256: 4ef449ffc5af2972b1e91e2fc0753c3f5e103f067e42b7b2cc32f18ceb3a9591
+    size: 67711112
     x-checker-data:
       type: anitya
       project-id: 5506
