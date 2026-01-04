@@ -19,8 +19,6 @@ build-commands:
     | tee src/policies.tmp
   - mv src/policies.tmp src/policies.json
   - make install DESTDIR=/app FIREFOX_DIR=lib/firefox FIREFOX_CONFIG_DIR=lib/firefox/distribution
-  - mkdir /app/etc/firefox
+  - mkdir -p /app/etc/firefox
   # these files should be moved, otherwise they not work
   - mv /app/lib/firefox/mobile-config-autoconfig.js /app/etc/firefox/mobile-config-autoconfig.js
-  - mv /app/lib/firefox/distribution/policies/policies.json /app/lib/firefox/distribution/policies.json
-

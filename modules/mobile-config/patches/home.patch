@@ -1,7 +1,7 @@
---- a/./src/userContent/home.css
-+++ b/./src/userContent/home.css
-@@ -16,3 +16,13 @@
-
+--- a/./src/themes/shared/content/home.css
++++ b/./src/themes/shared/content/home.css
+@@ -15,3 +15,13 @@
+ 
      }
  }
 +
