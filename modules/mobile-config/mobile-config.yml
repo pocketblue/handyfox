@@ -3,10 +3,10 @@ buildsystem: simple
 sources:
   - type: git
     url: https://gitlab.postmarketos.org/postmarketOS/mobile-config-firefox
-    commit: f7f638bdec28cf149fef73b5c17e01f2c977e276
+    commit: 6b0da1050a04e88d0e0c5bc8bd324ae5550de44b
     x-checker-data:
       type: git
-    tag: 4.6.1
+    tag: 5.1.0
   - type: patch
     paths:
       - patches/autoconfig.patch # loading gnome theme, replace /etc with /app/etc
