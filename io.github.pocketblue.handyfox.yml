@@ -31,7 +31,7 @@ finish-args:
   - --persist=.mozilla
 modules:
   - modules/firefox/launcher.yml
-  - modules/firefox/firefox_extra_data.yml
+  - modules/firefox/firefox_build_download.yml
   - modules/metainfo/metainfo.yml
   - modules/mobile-config/mobile-config.yml
 
